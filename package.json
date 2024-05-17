@@ -1,0 +1,24 @@
+{
+    "name": "toy-robot",
+    "version": "1.0.0",
+    "description": "1. NodeJS",
+    "main": "index.js",
+    "directories": {
+        "lib": "lib"
+    },
+    "scripts": {
+        "start": "esbuild ./main.ts --bundle --platform=node --outfile=dist/main.js  && node dist/main.js",
+        "test": "vitest run --coverage",
+        "test:watch": "vitest --coverage"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@vitest/coverage-v8": "1.6.0",
+        "esbuild": "0.21.2",
+        "vitest": "1.6.0"
+    },
+    "dependencies": {
+        "@types/node": "20.12.12"
+    }
+}
